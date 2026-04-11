@@ -1,5 +1,5 @@
 site_name: Git Guide
-site_description: Памятка по командам Git для новичков и опытных разработчиков
+site_description: Полное руководство по командам Git для новичков и опытных разработчиков
 site_author: DaniilGavrin
 repo_url: https://github.com/DaniilGavrin/git-guide
 repo_name: DaniilGavrin/git-guide
@@ -13,16 +13,52 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.expand
     - toc.integrate
     - search.suggest
     - search.highlight
 
 nav:
   - Главная: index.md
-  - Основы: basic-commands.md
-  - Ветки: branching.md
-  - Удаленная работа: remote.md
-  - Продвинутое: advanced.md
+  
+  - Основы работы:
+    - Настройка окружения: basics/setup.md
+    - Инициализация репозитория: basics/init.md
+    - Индексирование (Staging): basics/staging.md
+    - Коммиты: basics/commits.md
+    - История изменений: basics/history.md
+    - Базовые команды: basic-commands.md
+
+  - Ветки и слияния:
+    - Управление ветками: branching/management.md
+    - Слияние (Merge): branching/merge.md
+    - Разрешение конфликтов: branching/conflicts.md
+    - Перестройка (Rebase): branching/rebase.md
+    - Продвинутое ветвление: branching.md
+
+  - Удаленная работа:
+    - Подключение удаленного репо: remote/setup.md
+    - Клонирование и получение данных: remote/clone-fetch.md
+    - Синхронизация (Push/Pull): remote/sync.md
+    - Работа с remote: remote.md
+
+  - Откат изменений:
+    - Сброс и восстановление: undo/reset-restore.md
+    - Отмена коммита (Revert): undo/revert.md
+    - Временное сохранение (Stash): undo/stash.md
+    - Журнал действий (Reflog): undo/reflog.md
+
+  - Продвинутые темы:
+    - Теги (Tags): advanced/tags.md
+    - Выборочное применение (Cherry-pick): advanced/cherry-pick.md
+    - Поиск и сравнение: advanced/search-diff.md
+    - Подмодули: advanced/submodules.md
+    - Хуки (Hooks): advanced/hooks.md
+    - Переписывание истории: advanced/rewrite-history.md
+    - Продвинутые команды: advanced.md
+
+  - Лучшие практики:
+    - Стратегии ветвления: best-practices/workflows.md
 
 markdown_extensions:
   - admonition
