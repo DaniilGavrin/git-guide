@@ -1,0 +1,26 @@
+site_name: Git Guide
+site_description: Documentation and guides for Git usage
+site_author: DaniilGavrin
+repo_url: https://github.com/DaniilGavrin/git-guide
+repo_name: DaniilGavrin/git-guide
+
+theme:
+  name: material
+  palette:
+    primary: blue
+    accent: blue
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Home: index.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
