@@ -1,14 +1,15 @@
 site_name: Git Guide
-site_description: Documentation and guides for Git usage
+site_description: Памятка по командам Git для новичков и опытных разработчиков
 site_author: DaniilGavrin
 repo_url: https://github.com/DaniilGavrin/git-guide
 repo_name: DaniilGavrin/git-guide
 
 theme:
   name: material
+  language: ru
   palette:
     primary: blue
-    accent: blue
+    accent: indigo
   features:
     - navigation.tabs
     - navigation.sections
@@ -17,10 +18,16 @@ theme:
     - search.highlight
 
 nav:
-  - Home: index.md
+  - Главная: index.md
+  - Основы: basic-commands.md
+  - Ветки: branching.md
+  - Удаленная работа: remote.md
+  - Продвинутое: advanced.md
 
 markdown_extensions:
   - admonition
   - codehilite
+  - tables
+  - footnotes
   - toc:
       permalink: true

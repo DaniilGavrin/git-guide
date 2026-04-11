@@ -18,19 +18,19 @@
         
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Git Guide</title>
+        <title>Клонирование и Fetch - Git Guide</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,7 +49,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#fetch" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -81,7 +86,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
-    <a href="/." title="Git Guide" class="md-header__button md-logo" aria-label="Git Guide" data-md-component="logo">
+    <a href="../.." title="Git Guide" class="md-header__button md-logo" aria-label="Git Guide" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -101,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Клонирование и Fetch
             
           </span>
         </div>
@@ -188,7 +193,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -207,7 +212,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/basic-commands/" class="md-tabs__link">
+      <a href="../../basic-commands/" class="md-tabs__link">
         
   
   
@@ -226,7 +231,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/branching/" class="md-tabs__link">
+      <a href="../../branching/" class="md-tabs__link">
         
   
   
@@ -245,7 +250,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/remote/" class="md-tabs__link">
+      <a href="../" class="md-tabs__link">
         
   
   
@@ -264,7 +269,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/advanced/" class="md-tabs__link">
+      <a href="../../advanced/" class="md-tabs__link">
         
   
   
@@ -301,7 +306,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Навигация" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Git Guide" class="md-nav__button md-logo" aria-label="Git Guide" data-md-component="logo">
+    <a href="../.." title="Git Guide" class="md-nav__button md-logo" aria-label="Git Guide" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -331,7 +336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -358,7 +363,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/basic-commands/" class="md-nav__link">
+      <a href="../../basic-commands/" class="md-nav__link">
         
   
   
@@ -385,7 +390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/branching/" class="md-nav__link">
+      <a href="../../branching/" class="md-nav__link">
         
   
   
@@ -412,7 +417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/remote/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -439,7 +444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/advanced/" class="md-nav__link">
+      <a href="../../advanced/" class="md-nav__link">
         
   
   
@@ -472,8 +477,124 @@
               
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="fetch">Клонирование и Fetch<a class="headerlink" href="#fetch" title="Permanent link">&para;</a></h1>
+<p>Команды для получения репозитория с удаленного сервера и загрузки обновлений.</p>
+<h2 id="git-clone">Git Clone (Клонирование)<a class="headerlink" href="#git-clone" title="Permanent link">&para;</a></h2>
+<p>Создает полную локальную копию удаленного репозитория, включая всю историю коммитов, ветки и настройки.</p>
+<h3 id="_1">Базовое клонирование<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>&lt;URL&gt;
+</code></pre></div>
+
+<p>Примеры:</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Через HTTPS</span>
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/DaniilGavrin/git-guide.git
+
+<span class="c1"># Через SSH (рекомендуется)</span>
+git<span class="w"> </span>clone<span class="w"> </span>git@github.com:DaniilGavrin/git-guide.git
+</code></pre></div>
+
+<h3 id="_2">Клонирование в конкретную папку<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>По умолчанию Git создаст папку с именем репозитория. Можно указать свое имя:</p>
+<div class="codehilite"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>&lt;URL&gt;<span class="w"> </span>my-project
+</code></pre></div>
+
+<h3 id="_3">Клонирование конкретной ветки<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>Если вам нужна только определенная ветка (например, <code>develop</code>):</p>
+<div class="codehilite"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>&lt;имя-ветки&gt;<span class="w"> </span>&lt;URL&gt;
+</code></pre></div>
+
+<p>Пример:</p>
+<div class="codehilite"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>develop<span class="w"> </span>https://github.com/user/repo.git
+</code></pre></div>
+
+<h3 id="shallow-clone">Клонирование с глубиной истории (Shallow Clone)<a class="headerlink" href="#shallow-clone" title="Permanent link">&para;</a></h3>
+<p>Для больших репозиториев можно скачать только последние N коммитов:</p>
+<div class="codehilite"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>--depth<span class="w"> </span><span class="m">1</span><span class="w"> </span>&lt;URL&gt;
+</code></pre></div>
+
+<p>Это скачает только последний коммит. Полезно для CI/CD или быстрого ознакомления с кодом, но не подходит для полноценной разработки (не будет полной истории).</p>
+<h2 id="git-fetch">Git Fetch (Загрузка изменений)<a class="headerlink" href="#git-fetch" title="Permanent link">&para;</a></h2>
+<p><code>fetch</code> загружает изменения из удаленного репозитория, но <strong>не меняет</strong> ваши локальные файлы и не сливает изменения.</p>
+<h3 id="_4">Загрузка всех обновлений<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>git<span class="w"> </span>fetch<span class="w"> </span>origin
+</code></pre></div>
+
+<p>Скачивает все новые коммиты, ветки и теги с сервера <code>origin</code>.</p>
+<h3 id="_5">Загрузка конкретной ветки<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>git<span class="w"> </span>fetch<span class="w"> </span>origin<span class="w"> </span>&lt;имя-ветки&gt;
+</code></pre></div>
+
+<h3 id="_6">Просмотр загруженных изменений<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>После fetch можно посмотреть, что изменилось на сервере:</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Разница между вашей текущей веткой и удаленной</span>
+git<span class="w"> </span>log<span class="w"> </span>HEAD..origin/main
+
+<span class="c1"># Какие файлы изменились</span>
+git<span class="w"> </span>diff<span class="w"> </span>--name-status<span class="w"> </span>HEAD<span class="w"> </span>origin/main
+</code></pre></div>
+
+<h3 id="fetch_1">Слияние после Fetch<a class="headerlink" href="#fetch_1" title="Permanent link">&para;</a></h3>
+<p>После просмотра вы можете вручную слить изменения:</p>
+<div class="codehilite"><pre><span></span><code>git<span class="w"> </span>merge<span class="w"> </span>origin/main
+</code></pre></div>
+
+<p>Или сделать rebase:</p>
+<div class="codehilite"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span>origin/main
+</code></pre></div>
+
+<h2 id="fetch-pull">Сравнение Fetch и Pull<a class="headerlink" href="#fetch-pull" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Команда</th>
+<th>Что делает</th>
+<th>Когда использовать</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git fetch</code></td>
+<td>Только скачивает данные, не меняет файлы</td>
+<td>Когда хотите сначала посмотреть изменения перед слиянием</td>
+</tr>
+<tr>
+<td><code>git pull</code></td>
+<td>Скачивает и сразу делает merge</td>
+<td>Когда уверены, что хотите сразу получить обновления</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Совет:</strong> Используйте <code>fetch</code> + ручной <code>merge</code>/<code>rebase</code>, если работаете над важной задачей и хотите контролировать процесс слияния.</p>
+</blockquote>
+<h2 id="_7">Обновление списка удаленных веток<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p>Если коллега создал новую ветку на сервере, но вы её не видите:</p>
+<div class="codehilite"><pre><span></span><code>git<span class="w"> </span>fetch<span class="w"> </span>--prune
+</code></pre></div>
+
+<p>Флаг <code>--prune</code> также удаляет локальные ссылки на ветки, которые были удалены на сервере.</p>
+<hr />
+<p><a href="../sync/">Назад: Push и Pull →</a> | <a href="../../undo/reset-restore/">Далее: Reset и Restore →</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -510,10 +631,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "/", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "search.suggest", "search.highlight"], "search": "/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

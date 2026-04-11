@@ -18,19 +18,19 @@
         
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Git Guide</title>
+        <title>Rebase (Перебазирование) - Git Guide</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,7 +49,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#rebase" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -81,7 +86,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
-    <a href="/." title="Git Guide" class="md-header__button md-logo" aria-label="Git Guide" data-md-component="logo">
+    <a href="../.." title="Git Guide" class="md-header__button md-logo" aria-label="Git Guide" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -101,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Rebase (Перебазирование)
             
           </span>
         </div>
@@ -188,7 +193,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -207,7 +212,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/basic-commands/" class="md-tabs__link">
+      <a href="../../basic-commands/" class="md-tabs__link">
         
   
   
@@ -226,7 +231,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/branching/" class="md-tabs__link">
+      <a href="../" class="md-tabs__link">
         
   
   
@@ -245,7 +250,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/remote/" class="md-tabs__link">
+      <a href="../../remote/" class="md-tabs__link">
         
   
   
@@ -264,7 +269,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/advanced/" class="md-tabs__link">
+      <a href="../../advanced/" class="md-tabs__link">
         
   
   
@@ -301,7 +306,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Навигация" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Git Guide" class="md-nav__button md-logo" aria-label="Git Guide" data-md-component="logo">
+    <a href="../.." title="Git Guide" class="md-nav__button md-logo" aria-label="Git Guide" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -331,7 +336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -358,7 +363,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/basic-commands/" class="md-nav__link">
+      <a href="../../basic-commands/" class="md-nav__link">
         
   
   
@@ -385,7 +390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/branching/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -412,7 +417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/remote/" class="md-nav__link">
+      <a href="../../remote/" class="md-nav__link">
         
   
   
@@ -439,7 +444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/advanced/" class="md-nav__link">
+      <a href="../../advanced/" class="md-nav__link">
         
   
   
@@ -472,8 +477,124 @@
               
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="rebase">Rebase (Перебазирование)<a class="headerlink" href="#rebase" title="Permanent link">&para;</a></h1>
+<p><code>rebase</code> — это альтернатива <code>merge</code> для объединения веток. Вместо создания коммита слияния он "переписывает" историю, перенося коммиты из одной ветки на кончик другой.</p>
+<h2 id="merge-rebase">В чем разница между Merge и Rebase?<a class="headerlink" href="#merge-rebase" title="Permanent link">&para;</a></h2>
+<p><strong>Merge:</strong>
+- Сохраняет полную историю со всеми ветвлениями.
+- Создает коммит слияния.
+- История выглядит как граф.</p>
+<p><strong>Rebase:</strong>
+- Делает историю линейной.
+- Не создает лишних коммитов слияния.
+- Переписывает историю (меняет хеши коммитов).</p>
+<div class="codehilite"><pre><span></span><code>До rebase:
+A---B---C (feature)
+     \
+      D---E (main)
+
+После git rebase main (в ветке feature):
+
+A&#39;---B&#39;---C&#39; (feature)
+             \
+              D---E (main)
+
+После переключения в main и merge (fast-forward):
+
+D---E---A&#39;---B&#39;---C&#39; (main, feature)
+</code></pre></div>
+
+<h2 id="_1">Базовое использование<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Чтобы перенести коммиты из ветки <code>feature</code> на вершину <code>main</code>:</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Находясь в ветке feature</span>
+git<span class="w"> </span>rebase<span class="w"> </span>main
+</code></pre></div>
+
+<p>Git последовательно применит каждый коммит из <code>feature</code> поверх последнего коммита <code>main</code>.</p>
+<h2 id="rebase_1">Интерактивный Rebase<a class="headerlink" href="#rebase_1" title="Permanent link">&para;</a></h2>
+<p>Мощнейший инструмент для очистки истории перед слиянием. Позволяет:
+- Объединять несколько коммитов в один (squash).
+- Редактировать сообщения коммитов.
+- Менять порядок коммитов.
+- Удалять коммиты.</p>
+<div class="codehilite"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span>-i<span class="w"> </span>HEAD~3
+</code></pre></div>
+
+<p>Откроет редактор с последними 3 коммитами.</p>
+<p><strong>Команды в интерактивном режиме:</strong>
+- <code>p</code> (pick) — оставить коммит как есть.
+- <code>r</code> (reword) — изменить сообщение коммита.
+- <code>s</code> (squash) — объединить с предыдущим коммитом.
+- <code>f</code> (fixup) — как squash, но отбросить сообщение.
+- <code>d</code> (drop) — удалить коммит.</p>
+<p>Пример использования для объединения коммитов "черновиков" в один чистый:</p>
+<div class="codehilite"><pre><span></span><code>pick a1b2c3d Добавить функцию
+squash e4f5g6h Исправить опечатку
+squash h7i8j9k Добавить тесты
+</code></pre></div>
+
+<p>В результате получится один коммит с суммарными изменениями.</p>
+<h2 id="rebase_2">Rebase при синхронизации с удаленным репозиторием<a class="headerlink" href="#rebase_2" title="Permanent link">&para;</a></h2>
+<p>Частый сценарий: вы работаете в ветке, а в <code>main</code> за это время внесли изменения коллеги. Чтобы ваша история оставалась чистой:</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># В вашей фич-ветке</span>
+git<span class="w"> </span>fetch<span class="w"> </span>origin
+git<span class="w"> </span>rebase<span class="w"> </span>origin/main
+</code></pre></div>
+
+<p>После этого можно сделать <code>git push --force-with-lease</code> (если ветка уже была на сервере).</p>
+<h2 id="rebase_3">Конфликты при Rebase<a class="headerlink" href="#rebase_3" title="Permanent link">&para;</a></h2>
+<p>Если при перебазировании возникают конфликты, Git остановится после применения очередного коммита.</p>
+<ol>
+<li>Разрешите конфликт в файлах (как при обычном merge).</li>
+<li>Добавьте исправленные файлы:
+   <code>bash
+   git add &lt;файл&gt;</code></li>
+<li>Продолжите rebase:
+   <code>bash
+   git rebase --continue</code></li>
+</ol>
+<p>Для отмены:</p>
+<div class="codehilite"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span>--abort
+</code></pre></div>
+
+<h2 id="rebase_4">Золотое правило Rebase<a class="headerlink" href="#rebase_4" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>Никогда не делайте rebase коммитов, которые уже отправлены в общий удаленный репозиторий и могли быть использованы другими разработчиками.</strong></p>
+</blockquote>
+<p>Rebase меняет историю (хеши коммитов). Если вы сделаете rebase общей ветки, у ваших коллег возникнут серьезные проблемы при слиянии.</p>
+<p><strong>Безопасно использовать rebase для:</strong>
+- Локальных фич-веток перед слиянием в <code>main</code>.
+- Очистки своих собственных коммитов до пуша.</p>
+<p><strong>Небезопасно:</strong>
+- Для веток <code>main</code>, <code>develop</code> и других общих веток.
+- Для веток, над которыми работают другие люди.</p>
+<h2 id="rebase-merge">Когда использовать Rebase, а когда Merge?<a class="headerlink" href="#rebase-merge" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Rebase</strong>: для поддержания чистой, линейной истории локальной фич-ветки перед слиянием.</li>
+<li><strong>Merge</strong>: для сохранения полной истории разработки, особенно когда важно видеть, когда и какие ветки сливались (или для слияния в общие ветки).</li>
+</ul>
+<hr />
+<p><a href="../conflicts/">Назад: Конфликты →</a> | <a href="../../remote/setup/">Далее: Настройка удаленных репозиториев →</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -510,10 +631,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "/", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "search.suggest", "search.highlight"], "search": "/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
